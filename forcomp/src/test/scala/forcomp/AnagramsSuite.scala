@@ -37,6 +37,12 @@ class AnagramsSuite {
     assertEquals(lad, subtract(lard, r))
   }
 
+  @Test def `subtract: lard - Nil (custim)`: Unit = {
+    val lard = List(('a', 1), ('d', 1), ('l', 1), ('r', 1))
+    val r = List()
+    assertEquals(lard, subtract(lard, r))
+  }
+
 
   @Test def `combinations: [] (8pts)`: Unit =
     assertEquals(List(Nil), combinations(Nil))
